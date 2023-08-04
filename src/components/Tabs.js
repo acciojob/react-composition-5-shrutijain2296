@@ -3,8 +3,8 @@ import React, {useState} from "react";
 
 
 const Tabs = ({tabs, tabs2}) =>{
-    let [tab1, setTab1] = useState("");
-    let [tab2, setTab2] = useState("");
+    let [tab1, setTab1] = useState(tabs[0]?.content || "");
+    let [tab2, setTab2] = useState(tabs2[0]?.content || "");
 
     return(
         <div>
